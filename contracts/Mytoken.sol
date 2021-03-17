@@ -49,4 +49,12 @@ contract ERC20Basic is IERC20 {
         emit Transfer(owner, buyer, numTokens);
         return true;
     }
+    
+    function getToken(address delegate, address owner, address buyer, uint256 numTokens)  public returns (bool) {
+        if (approve(delegate, numTokens)) {
+            transferFrom(owner, buyer, numTokens);
+        }
+        emit getToken(delegate, owner, buyer, numTokens);
+        return true;
+    }
 }
