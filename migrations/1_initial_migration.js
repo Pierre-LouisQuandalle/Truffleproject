@@ -1,5 +1,6 @@
-const Box = artifacts.require("Box");
+var Mytoken = artifacts.require("Mytoken");
 
-module.exports = async function (deployer) {
-  await deployer.deploy(Box);
+module.exports = function(deployer) {
+  // deployment steps
+  deployer.deploy(Mytoken);
 };

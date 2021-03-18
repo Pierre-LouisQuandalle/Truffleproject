@@ -15,4 +15,7 @@ Utiliser Ganache
 ```
 npm install --save-dev ganache-cli
 npx ganache-cli --deterministic --db
+
+Ouvrir un autre terminal et exécuter
+npx truffle migrate --network development
 ```
